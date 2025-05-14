@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+
+/* FONTS IMPORT */
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/fonts/FoundersGrotesk-Regular.woff2') format('woff2'),
+        url('/fonts/FoundersGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/fonts/FoundersGrotesk-Semibold.woff2') format('woff2'),
+        url('/fonts/FoundersGrotesk-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url('/fonts/FoundersGrotesk-Bold.woff2') format('woff2'),
+        url('/fonts/FoundersGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Feature Deck LC';
+    src: url('/fonts/FeatureDeckLC-Regular.woff2') format('woff2'),
+        url('/fonts/FeatureDeckLC-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Feature Deck LC';
+    src: url('/fonts/FeatureDeckLC-Medium.woff2') format('woff2'),
+        url('/fonts/FeatureDeckLC-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* tailwind classes */
+@theme {
+    /* fonts */
+    --font-Founders: "Founders Grotesk";
+    --font-FeatureDeck: "Feature Deck LC";
+
+
+
+    /* colors */
+    --color-adc_black: #1D1D1B;
+    --color-adc_white: #FAF7F7;
+
+
+    --zoom-initial: 100% 100%;
+    --zoom-110: 120% 120%;
+}
+
+/* TEXT STYLES */
+@layer components {
+    .CTA {
+        font-family: "Founders Grotesk Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .CTA_service {
+        font-family: "Founders Grotesk Condensed";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .h1_serif {
+        font-family: "Feature Deck Condensed";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 50px */
+    }
+
+    .subtitle {
+        font-family: "Feature Deck Condensed";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        /* 20px */
+    }
+}
+
+
+/* GENERAL (PEND TO ASK, copied from Marcos Project) */
+body {
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-adc_white);
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+    opacity: 0;
+}
