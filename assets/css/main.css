@@ -31,6 +31,25 @@
 }
 
 @font-face {
+    font-family: 'Founders Grotesk Condensed';
+    src: url('/fonts/FoundersGroteskCond-Bold.woff2') format('woff2'),
+        url('/fonts/FoundersGroteskCond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk Condensed';
+    src: url('/fonts/FoundersGroteskCond-Reg.woff2') format('woff2'),
+        url('/fonts/FoundersGroteskCond-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
     font-family: 'Feature Deck LC';
     src: url('/fonts/FeatureDeckLC-Regular.woff2') format('woff2'),
         url('/fonts/FeatureDeckLC-Regular.woff') format('woff');
@@ -54,12 +73,14 @@
     /* fonts */
     --font-Founders: "Founders Grotesk";
     --font-FeatureDeck: "Feature Deck LC";
+        --font-FoundersCond: "Founders Grotesk Condensed";
+
 
 
 
     /* colors */
-    --color-adc_black: #1D1D1B;
-    --color-adc_white: #FAF7F7;
+    --color-adcblack: #1F1E1B;
+    --color-adcwhite: #F9F6F6;
 
 
     --zoom-initial: 100% 100%;
@@ -73,16 +94,14 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 600;
-        line-height: normal;
         text-transform: uppercase;
     }
 
     .CTA_service {
         font-family: "Founders Grotesk Condensed";
         font-size: 16px;
-        font-style: normal;
+        font-style: condensed;
         font-weight: 400;
-        line-height: normal;
         text-transform: uppercase;
     }
 
@@ -106,12 +125,19 @@
 }
 
 
+/* margin and bigger screens behaviour */
+
 /* GENERAL (PEND TO ASK, copied from Marcos Project) */
 body {
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-adc_white);
+    background-color: var(--color-adcblack);
+    color: var(--color-adcwhite);
+}
+
+*{
+      box-sizing: border-box;
 }
 
 .page-enter-active,
@@ -122,4 +148,6 @@ body {
 .page-enter-from,
 .page-leave-to {
     opacity: 0;
+    
 }
+
