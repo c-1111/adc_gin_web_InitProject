@@ -8,5 +8,6 @@
         <div class="tag_subtitle"><span class="h1_serif">Distillato con passione in Italia.
                 Da bere responsabilmente, quando conta davvero.</span></div>
     </section>
+
 </template>
 <style scoped></style>

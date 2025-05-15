@@ -1,5 +1,5 @@
 <script setup>
-defineProps({
+const props = defineProps({
     bottles: {
         type: Array,
         required: true
@@ -19,20 +19,11 @@ defineProps({
             </div>
             <div class="front w-full">
                 <div class="imgs_container w-full flex gap-40 justify-center absolute top-60">
-                    <img class="max-h-96" src="/public/img/aura_gin_bott.png" alt="AURA GIN">
-                    <img class="max-h-96" src="/public/img/assente_amaro_bott.png" alt="ASSENTE AMARO">
-                    <img class="max-h-96" src="/public/img/erarosa_biter_bott.png" alt="ERAROSA BITTER">
+
+                    <img v-for='e in bottles' class="max-h-96" :src="e.img" :alt="e.name">
                 </div>
             </div>
         </div>
     </section>
 </template>
 <style scoped></style>
-
-<!-- getting the images from the app script -->
-
-  <!-- <div class="imgs_container w-full flex gap-40 justify-center relative">
-                    <pre>{{ bottles }}</pre>
-                    <img v-for="bottle in bottles" :key="bottle.id" :src="bottle.url" class="relative top-60"
-                        :alt="bottle.alt || 'Bottle'" />
-                </div> -->

@@ -41,16 +41,17 @@
 
 @font-face {
     font-family: 'Founders Grotesk Condensed';
-    src: url('/fonts/FoundersGroteskCond-Reg.woff2') format('woff2'),
-        url('/fonts/FoundersGroteskCond-Reg.woff') format('woff');
+    src: url('/fonts/FoundersGroteskXCond-Reg.woff2') format('woff2'),
+        url('/fonts/FoundersGroteskXCond-Reg.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Founders Grotesk Condensed';
-    src: url('FoundersGroteskXCond-SmBd.woff2') format('woff2'),
-        url('FoundersGroteskXCond-SmBd.woff') format('woff');
+    src: url('/fonts/FoundersGroteskXCond-SmBd.woff2') format('woff2'),
+        url('/fonts/FoundersGroteskXCond-SmBd.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -82,7 +83,7 @@
     /* fonts */
     --font-Founders: "Founders Grotesk";
     --font-FeatureDeck: "Feature Deck LC";
-        --font-FoundersCond: "Founders Grotesk Condensed";
+    --font-FoundersCond: "Founders Grotesk Condensed";
 
 
 
@@ -96,6 +97,8 @@
     --zoom-110: 120% 120%;
 }
 
+
+/* naming convantion of classes view README FILE */
 /* TEXT STYLES */
 @layer components {
     .CTA {
@@ -137,6 +140,13 @@
 /* margin and bigger screens behaviour */
 
 /* GENERAL (PEND TO ASK, copied from Marcos Project) */
+
+html,
+body {
+
+    scroll-behavior: smooth;
+}
+
 body {
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -145,8 +155,8 @@ body {
     color: var(--color-adcwhite);
 }
 
-*{
-      box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 .page-enter-active,
@@ -157,18 +167,23 @@ body {
 .page-enter-from,
 .page-leave-to {
     opacity: 0;
-    
+
 }
 
 /* Animación personalizada para el marquee */
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Clase de animación */
 .animate-marquee {
-  animation: marquee 20s linear infinite;
-  display: inline-block;
-  white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
 }

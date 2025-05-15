@@ -73,3 +73,29 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+BEM 
+Block Element Modifier 
+
+Block => Newsletter
+Element => title
+modifier => active 
+
+.newsletter {
+    width:50%
+}
+.newsletter_title {
+    text-align:center;
+}
+.newsletter_title_active {
+    color:Red;
+}
+.newsletter_title_active 
+
+https://getbem.com/
+
+DO NOT TO 
+never apply stile to HTML TAG - use classes ! 
+never use ID 
+.newsletter p {
+
+}
