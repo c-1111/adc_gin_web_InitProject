@@ -47,6 +47,15 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Founders Grotesk Condensed';
+    src: url('FoundersGroteskXCond-SmBd.woff2') format('woff2'),
+        url('FoundersGroteskXCond-SmBd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 @font-face {
@@ -109,7 +118,7 @@
         font-family: "Feature Deck Condensed";
         font-size: 50px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: normal;
         line-height: 100%;
         /* 50px */
     }
@@ -151,3 +160,15 @@ body {
     
 }
 
+/* Animación personalizada para el marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Clase de animación */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}

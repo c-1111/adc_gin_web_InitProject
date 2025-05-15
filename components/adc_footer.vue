@@ -6,9 +6,9 @@
             <a href="" target="_blank" class="CTA_service">@A.D.C.</a>
             <a href="" target="_blank" class="CTA_service">terms and conditions</a>
         </nav>
-        <div class="footer_title w-full inline-block align-bottom">
+        <div class="footer_title w-full align-bottom flex justify-center">
             <p
-                class="w-full text-[clamp(1rem,8.06vw,50rem)] font-FoundersCond font-bold uppercase leading-[clamp(0rem,8vw,8rem)]">
+                class="w-full flex justify-center text-[clamp(1rem,7.9vw,20rem)] whitespace-nowrap font-FoundersCond font-bold uppercase leading-[clamp(0rem,8vw,8rem)]">
                 anonima distilleria creativa</p>
         </div>
         <nav class="bttm_ctas flex justify-between">
