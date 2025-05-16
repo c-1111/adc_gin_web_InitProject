@@ -81,6 +81,9 @@ const carouselImages = [
 // responsive?
 // CAROUSEL
 // FIX fitText COMPONENT
+// LENIS SCROLL & ANIMATION
+// SANITY
+
 </script>
 
 <template>
