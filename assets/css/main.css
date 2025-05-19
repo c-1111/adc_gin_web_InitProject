@@ -150,15 +150,15 @@
 html,
 body {
 
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 body {
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-adcblack);
-    color: var(--color-adcwhite);
+    /* background-color: var(--color-adcblack); */
+    /* color: var(--color-adcwhite); */
 }
 
 * {

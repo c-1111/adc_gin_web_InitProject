@@ -1,5 +1,4 @@
 <script setup>
-import { LandingFooter } from '#components'
 import { VueLenis, useLenis } from 'lenis/vue'
 import { watch } from 'vue'
 
@@ -71,28 +70,64 @@ const carouselImages = [
 ]
 
 
+
+
+// useLenis()
+
+
+
+
+// ATT to naming conventions. NO concrete examples. Names from the structure of the component ex. product-grid-with-text INSTEAD OF bottles-together
+// NO html classes to name the component
+// BEM css for class naming (block-element-modifier)
+// ID use only for scroll point getting behaviors url#id --> [scroll-behavior: smooth;] navigates to point. 
+// Separate CSS sheets
+
+
+
 //------------------------------TO-DO--------------------------
+// NO V-FOR IN COMPONENTS                           *done?
+// CONTAINER & COMPONENT-CONTAINER CLASSES mediaqs  *done?
+// CUSTOM PADDINGS ON EACH SEACTION                 done*
+// HEADER STICKY BEHAVIOUR ON SCROLL, SMALLER       done*
+// LENIS SCROLL                                     done??*
+
+
 // different screens width management
 // responsive?
-
+// CAROUSEL
+// FIX fitText COMPONENT
+// SANITY
 
 </script>
 
 <template>
-  <vueLenis root class="">
-    <header_landing />
+  <vueLenis root>
+    <adc_header />
 
-    <main class="main bg-adcwhite">
+    <main class="main">
 
-      <Hero-landing :herocontent="e" v-for="(e, i) in herocontent" :key="i" />
+      <Hero :herocontent="e" v-for="(e, i) in herocontent" :key="i" />
 
-      <Marquee-negative :items="marqueeItems" :duration="16" />
+      <Marquee :items="marqueeItems" :duration="16" />
 
-      <LandingContact />
+      <product-flex-overlay :flexOverlayContent="e" v-for="(e, i) in flexOverlayContent" :key="i" />
+
+      <Marquee :items="marqueeItems" :duration="16" />
+
+      <hero-2 :hero2content="e" v-for="(e, i) in hero2content" :key="i" />
+
+      <ProductsOverlayText :bottles :overlayedText />
+
+      <horizontal-tag />
+
+      <carousel :carouselImages="carouselImages" />
+
+      <newsletter />
 
     </main>
 
-    <LandingFooter />
+    <adc_footer />
 
   </vueLenis>
 </template>
