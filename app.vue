@@ -21,7 +21,7 @@ const herocontent = [
 ]
 
 const marqueeItems = [
-  "CREATO PER SORPRENDERE",
+  "COMING SOON",
 ]
 
 

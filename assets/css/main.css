@@ -79,6 +79,16 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Feature Deck Condensed';
+    src: url('/fonts/FeatureDeckCondensed-Regular.woff2') format('woff2'),
+        url('/fonts/FeatureDeckCondensed-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /* tailwind classes */
 @theme {
@@ -107,6 +117,17 @@
 /* naming convantion of classes view README FILE */
 /* TEXT STYLES */
 @layer components {
+    .h1_sans {
+        font-family: "Founders Grotesk Condensed";
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+        /* 80px */
+        text-transform: uppercase;
+
+    }
+
     .CTA {
         font-family: "Founders Grotesk Condensed";
         font-size: 20px;
@@ -134,18 +155,36 @@
 
     .subtitle {
         font-family: "Feature Deck Condensed";
-        font-size: 20px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%;
         /* 20px */
     }
+
+        @media (width <=64rem) {
+        .h1_sans {
+            font-family: "Founders Grotesk Condensed";
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 80%;
+            /* 32px */
+            text-transform: uppercase;
+        }
+        .subtitle {
+            font-family: "Feature Deck Condensed";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            /* 24px */
+        }
+    }
 }
 
 
-/* margin and bigger screens behaviour */
 
-/* GENERAL (PEND TO ASK, copied from Marcos Project) */
 
 html,
 body {
@@ -195,16 +234,16 @@ body {
 }
 
 @utility container {
-  max-width: 1096rem; 
-  margin-inline: auto;
+    max-width: 1096rem;
+    margin-inline: auto;
 }
 
 @utility component-container {
-  @media (width > 96rem) {
-    padding-inline: 0;
-  }
+    @media (width > 96rem) {
+        padding-inline: 0;
+    }
 
-  @media (width < 1920px) {
-    padding-inline: calc(var(--spacing) * 8);
-  }
+    @media (width < 1920px) {
+        padding-inline: calc(var(--spacing) * 8);
+    }
 }
