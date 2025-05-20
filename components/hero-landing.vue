@@ -6,14 +6,14 @@ const props = defineProps({
 
 <template>
     <section class="container component-container px-4 mb-20 text-adcblack max-lg:mb-12">
-
+        <img src="/hero.jpg" alt="" class="hero_image">
         <div class="tag">
         </div>
         <div class="tag_subtitle">
             <p
                 class="font-FoundersCond font-bold uppercase border-b-1 border-adcblack text-justify pb-6 utility_class max-lg:pb-3">
-                Siamo una piattaforma multidisciplinare che ridefinisce l’esperienza del bere attraverso la ricerca
-                dell’inaspettato.</p>
+                Siamo un brand di spirits che trasforma l’esperienza sensoriale del bere, combinando profumi, sapori e
+                colori in modo sorprendente.</p>
         </div>
         <div class="tag_subtitle">
             <!-- CHANGE FONT TO CONDENSED REGULAR -->
@@ -30,6 +30,11 @@ const props = defineProps({
 </template>
 
 <style scoped lang="scss">
+.hero_image {
+    margin-top: 16px;
+    width: 100%;
+}
+
 .utility_class {
     font-size: 10rem;
     line-height: 1;

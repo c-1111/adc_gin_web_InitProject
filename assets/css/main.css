@@ -232,6 +232,10 @@ body {
     display: inline-block;
     white-space: nowrap;
 }
+html,
+body {
+  background-color: #F9F6F6;
+}
 
 @utility container {
     max-width: 1096rem;

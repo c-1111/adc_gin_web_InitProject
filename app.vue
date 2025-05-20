@@ -2,7 +2,7 @@
 useHead({
   title: 'Anonima Distilleria Creativi',
   meta: [
-    { name: 'description', content: 'Siamo una piattaforma multidisciplinare che ridefinisce l’esperienza del bere attraverso la ricerca dell’inaspettato.' }
+    { name: 'description', content: 'Siamo un brand di spirits che trasforma l’esperienza sensoriale del bere, combinando profumi, sapori e colori in modo sorprendente.' }
   ]
 })
 import { LandingFooter } from '#components'
