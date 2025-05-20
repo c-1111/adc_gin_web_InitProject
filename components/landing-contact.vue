@@ -1,4 +1,28 @@
-<script></script>
+<script setup>
+const submitted = ref(false);
+const body = ref({
+    email: null
+})
+const submit = async () => {
+    submitted.value = true;
+    const endpoint = `https://works.display.design/api/submissions?&email=${body.value.email}&client=adc`
+
+    const response = await fetch(endpoint, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+        },
+    });
+
+    const result = await response.json();
+    console.log(result)
+};
+const message = computed(() => {
+    return submitted.value ? "Grazie" : "Iscriviti"
+})
+</script>
+
 
 <template>
     <section class="container component-container px-4 mt-20 mb-4 max-lg:mt-14">
@@ -10,18 +34,19 @@
                 </div>
                 <!-- CHANGE FONT TO CONDENSED REGULAR -->
 
-                <div class="flex justify-center h-auto">
+                <form class="flex justify-center h-auto" @submit.prevent="submit">
                     <div
                         class="subtitle h-12 border-1 w-full border-adcwhite flex flex-nowrap max-lg:flex-col max-lg:h-auto max-lg:items-center">
-                        <input type="text" class="p-2 text-adcwhite text-[20px] w-full"
-                            placeholder="Inserisci la tua mail">
+                        <input type="email" required class="p-2 text-adcwhite text-[20px] w-full"
+                            placeholder="Inserisci la tua mail" v-model="body.email">
                         <button
-                            class="bg-adcwhite px-10 flex items-center h-full CTA text-adcblack max-lg:min-h-10 max-lg:w-full max-lg:px-0 max-lg:justify-center">Iscriviti
+                            class="bg-adcwhite px-10 flex items-center h-full CTA text-adcblack max-lg:min-h-10 max-lg:w-full max-lg:px-0 max-lg:justify-center">
+                            {{ message }}
                         </button>
                         <!-- same width as parent -->
 
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

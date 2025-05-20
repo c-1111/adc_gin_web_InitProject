@@ -1,4 +1,6 @@
-<script></script>
+<script>
+
+</script>
 
 <template>
     <section class="container component-container px-4">
@@ -27,5 +29,4 @@
     </section>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

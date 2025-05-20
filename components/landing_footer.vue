@@ -4,7 +4,6 @@
     <footer class=" container component-container px-4 footer_container flex flex-col gap-54 w-full pb-4 bg-adcblack ">
         <nav class="flex justify-between text-adcwhite">
             <a href="" target="_blank" class="CTA_service">privacy policy</a>
-            <a href="" target="_blank" class="CTA_service">terms and conditions</a>
         </nav>
         <div class="footer_title w-full flex justify-center">
 
