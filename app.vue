@@ -2,7 +2,7 @@
 useHead({
   title: 'Anonima Distilleria Creativi',
   meta: [
-    { name: 'description', content: 'la piattaforma creativa e multidisciplinare che rimodella il mondo del beverage attraverso la meraviglia e la sorpresa.' }
+    { name: 'description', content: 'Siamo una piattaforma multidisciplinare che ridefinisce l’esperienza del bere attraverso la ricerca dell’inaspettato.' }
   ]
 })
 import { LandingFooter } from '#components'

@@ -12,12 +12,13 @@ const props = defineProps({
         <div class="tag_subtitle">
             <p
                 class="font-FoundersCond font-bold uppercase border-b-1 border-adcblack text-justify pb-6 utility_class max-lg:pb-3">
-                la piattaforma creativa e multidisciplinare che rimodella il mondo del beverage attraverso la meraviglia
-                e la sorpresa.</p>
+                Siamo una piattaforma multidisciplinare che ridefinisce l’esperienza del bere attraverso la ricerca
+                dell’inaspettato.</p>
         </div>
         <div class="tag_subtitle">
             <!-- CHANGE FONT TO CONDENSED REGULAR -->
-            <p class="h1_serif utility_class2 max-w-[60ch] mt-4 max-lg:mt-2">Creiamo spiriti senza tempo, pensati per trasformare
+            <p class="h1_serif utility_class2 max-w-[60ch] mt-4 max-lg:mt-2">Creiamo spiriti senza tempo, pensati per
+                trasformare
                 ogni momento in un’occasione intensa e memorabile. <br> Non ci limitiamo a servire bevande: offriamo
                 emozioni, presenza e connessione autentica. Dall’idea alla ricetta, fino alla produzione, curiamo ogni
                 dettaglio con attenzione e passione, dando vita a prodotti originali, curati e sorprendenti. <br> A.D.C.
@@ -42,7 +43,7 @@ const props = defineProps({
 }
 
 .utility_class2 {
-        line-height: 110%;
+    line-height: 110%;
 
 
     @media (width < 768px) {
